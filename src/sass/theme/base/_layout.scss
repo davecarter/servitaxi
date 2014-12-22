@@ -1,0 +1,12 @@
+
+// Base styles
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+section {
+  margin: 0;
+  @include full;
+}

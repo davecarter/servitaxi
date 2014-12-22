@@ -1,0 +1,38 @@
+// Header
+
+.fold {
+	background: url(../img/bg_home.jpg) top center no-repeat;
+	background-size: cover;
+	padding: 0 0em 2em;
+	@extend .clearfix;
+}
+
+.header {
+	@include container(1128px);
+	float: none;
+	// max-width: $s-innerWidth;
+
+	@media (max-width: $b-large) {
+		background: url(../img/bg_home.jpg) top center no-repeat;
+		background-size: 200%;
+		padding: 2em 0em 2em;
+	}
+
+	hgroup {
+		@include span(11);
+		padding: 2em 0;
+	}
+
+	h1,
+	h3 {
+		@include span(14);
+		margin-bottom: 1em;
+	}
+	
+}
+
+.head-wrapper {
+	margin: 0 auto;
+	width: span(8);
+
+}

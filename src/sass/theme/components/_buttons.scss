@@ -1,0 +1,11 @@
+// Buttons
+
+
+// Header CTA
+.headGuide {
+	@media (max-width: $b-large) {
+		.button--large {
+			font-size: 16px;
+		}
+	}
+}

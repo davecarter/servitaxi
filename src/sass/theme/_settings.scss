@@ -1,0 +1,52 @@
+
+// Susy 2 settings
+
+$susy: (
+	flow: ltr,
+	math: fluid,
+	output: float,
+	gutter-position: after,
+	container: auto,
+	container-position: center,
+	columns: 18,
+	gutters: .1,
+	column-width: false,
+	global-box-sizing: content-box,
+	last-flow: to,
+	
+	// Cambiar image: show/hide para mostrar el grid
+	debug: (
+		image: hide,
+		color: rgba(255,0,0, .25),
+		output: background,
+		toggle: top right,
+	),
+	use-custom: (
+		background-image: true,
+		background-options: false,
+		box-sizing: true,
+		clearfix: false,
+		rem: true,
+	)
+);
+
+// Layouts personalizados
+$layout-landing: layout(18 2 fluid float after);
+$layout-consejos-med: layout(6 2 fluid float after);
+
+// Variables de layout
+$s-innerWidth:			1128px;					// Max width Listado detalle
+
+// Breakpoints
+$b-large:				922px;
+$b-medium:				320px;
+
+// Colours
+$c-main:				#333;					// Main color
+
+$c-neutroLightest:  	#ffffff;
+$c-neutroDarkest:   	#000000;
+
+// Font Family
+$f-sans: "proxima-nova", sans-serif;
+
