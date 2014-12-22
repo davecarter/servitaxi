@@ -34,10 +34,15 @@ section {
   padding: 0 0em 2em;
 }
 
+nav {
+  margin-bottom: 6em;
+}
+
 .header {
   max-width: 1128px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 5.07614% 0;
   float: none;
 }
 .header:after {
@@ -45,18 +50,10 @@ section {
   display: block;
   clear: both;
 }
-@media (max-width: 922px) {
-  .header {
-    background: url(../img/bg_home.jpg) top center no-repeat;
-    background-size: 200%;
-    padding: 2em 0em 2em;
-  }
-}
 .header hgroup {
-  width: 60.91371%;
+  width: 55.32995%;
   float: left;
   margin-right: 0.50761%;
-  padding: 2em 0;
 }
 .header h1,
 .header h3 {
@@ -66,9 +63,40 @@ section {
   margin-bottom: 1em;
 }
 
-.head-wrapper {
-  margin: 0 auto;
-  width: 44.16244%;
+.form-container {
+  width: 32.99492%;
+  float: right;
+  margin-right: 0;
+  background-color: rgba(34, 34, 34, 0.6);
+  padding: 1em 2em;
+}
+.form-container h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-bottom: 1em;
+}
+.form-container span {
+  color: #7ec048;
+}
+.form-container input,
+.form-container select {
+  border: none;
+  border-radius: 3px;
+  font-size: 1em;
+  margin: 7px 0;
+  padding: 10px;
+  width: 95%;
+}
+.form-container select {
+  background: white url("../img/bg_select.png") right 10px center;
+  background-size: 7%;
+  background-repeat: no-repeat;
+  color: #939393;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  width: 100%;
+  -webkit-appearance: none;
 }
 
 h1, h2, h3 {
