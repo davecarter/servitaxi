@@ -8,7 +8,37 @@
 }
 
 nav {
+	@include container();
 	margin-bottom: 6em;
+}
+
+.telf-container {
+	float: right;
+	padding: 2em 0 0 0;
+	width: span(4 at 15 of 18);
+	
+	img {
+		float: right;
+		width: 40px;
+	}
+
+	h4, h5 {
+		color: #fff;
+		float: right;
+		font-weight: 300;
+		font-size: 1.2em;
+		margin: 0;
+		width: 50%;
+		span {
+			color: $c-primary-green;
+		}
+	}
+
+	h5 {
+		font-size: .8em;
+		padding-right: 16px;
+		text-align: right;
+	}
 }
 
 .header {
@@ -70,6 +100,48 @@ nav {
 		font-size: 16px;
 		width: 100%;
 			-webkit-appearance: none;
+	}
+
+	.form-privacy,
+	.form-info {
+		float: left;
+		input {
+			float: left;
+			width: 30px;
+		}
+
+		span {
+			color: #fff;
+			display: inline-block;
+			padding: 5px 0 0 0;
+		}
+
+		a {
+			color: $c-primary-green;
+			text-decoration: none;
+			&:hover {
+				color: darken($c-primary-green, 15%);
+			}
+		}
+	}
+
+	.form-privacy {
+		margin-top: 15px;
+	}
+
+	button {
+		background-color: $c-primary-green;
+		border: none;
+		border-radius: 3px;
+		color: white;
+		cursor: pointer;
+		font-size: 1em;
+		margin: 10px 0;
+		padding: 15px;
+		width: 100%;
+		&:hover {
+			background-color: darken($c-primary-green, 15%);
+		}
 	}
 }
 
