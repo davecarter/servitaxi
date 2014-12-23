@@ -30,23 +30,19 @@ $susy: (
 	)
 );
 
-// Layouts personalizados
-$layout-landing: layout(18 2 fluid float after);
-$layout-consejos-med: layout(6 2 fluid float after);
 
 // Variables de layout
 $s-innerWidth:			1128px;					// Max width Listado detalle
 
 // Breakpoints
-$b-large:				922px;
+$b-large:				1128px;
 $b-medium:				320px;
 
 // Colours
-$c-main:				#333;					// Main color
+$c-primary-green:		#7ec048;				// Main color
 
 $c-neutroLightest:  	#ffffff;
 $c-neutroDarkest:   	#000000;
-$c-primary-green:		#7ec048;
 
 // Font Family
 $f-sans: "proxima-nova", sans-serif;
