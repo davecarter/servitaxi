@@ -313,8 +313,8 @@ footer:after {
 .mobile-form-container .form-privacy {
   margin-top: 15px;
 }
-.form-container button,
-.mobile-form-container button {
+.form-container input[type="submit"],
+.mobile-form-container input[type="submit"] {
   background-color: #7ec048;
   border: none;
   border-radius: 3px;
@@ -325,8 +325,8 @@ footer:after {
   padding: 15px;
   width: 100%;
 }
-.form-container button:hover,
-.mobile-form-container button:hover {
+.form-container input[type="submit"]:hover,
+.mobile-form-container input[type="submit"]:hover {
   background-color: #598b30;
 }
 
@@ -336,6 +336,15 @@ footer:after {
     margin-top: 8em;
     padding: 2em 0;
   }
+}
+
+.btn-volver {
+  clear: both;
+  float: left;
+}
+.btn-volver a {
+  text-decoration: none;
+  color: #7ec048;
 }
 
 footer {

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Servitaxi</title>
+	<link rel="stylesheet" href="dist/css/style.css">
+
+	<!-- Typekit -->
+	<script src="//use.typekit.net/btg5zft.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+
+	<!-- Form validator -->
+	<script LANGUAGE="JavaScript">
+		<!--
+		function validateform(){
+			if (document.Form.name.value == ''){
+				alert('Introduzca el nombre.');
+				document.Form.name.focus();
+				return false;
+			}
+			if (document.Form.phone.value == '' || document.Form.phone.value == null){
+				alert("Introduzca su teléfono.");
+				document.Form.phone.focus();
+				return false;
+			}
+			if (remember.condiciones == 1){
+          		alert("Debes aceptar las condiciones de uso") ;
+			}
+			return true;
+		}
+        //-->
+    </script>
+
+</head>
+<body>
+
+	<article class="fold">
+		<section class="header">
+
+			<!-- desktop nav items -->
+			<nav class="desktop-nav">
+				<img src="dist/img/logo-servitaxi.png" alt="Logo Servitaxi">
+				<div class="telf-container">
+					<a href="tel:933300300"><img src="dist/img/icon-telf.png" alt="Icono teléfono"></a>
+					<h4><span>933 300</span> 300</h4>
+					<h5>Reservas 24h</h5>
+				</div>
+			</nav>
+
+			<hgroup>
+				<h1>Gracias.</h1>
+				<h3>Su mensaje ha sido enviado satisfactoriamente.</h3>
+				<span class="btn-volver"><a href="index.html">Volver</a></span>
+			</hgroup>
+
+
+		</section>
+	</article>
+	<footer>
+		<span>© 2015 SERVITAXI 1976 S.L.</span>
+		<ul>
+			<li>
+				<a href="#">Información legal</a>
+				<a href="#">Política de privacidad</a>
+			</li>
+		</ul>
+	</footer>
+
+	<!-- Load JS -->
+
+	<script src="dist/js/main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
+	<script>
+		$("#reservar").click(function(){
+		  $("#mobile-form-container").slideToggle("normal");
+		  $(this).toggleClass("active");
+		});
+	</script>
+
+</body>
+</html>

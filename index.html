@@ -9,6 +9,28 @@
 	<script src="//use.typekit.net/btg5zft.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 
+	<!-- Form validator -->
+	<script LANGUAGE="JavaScript">
+		<!--
+		function validateform(){
+			if (document.Form.name.value == ''){
+				alert('Introduzca el nombre.');
+				document.Form.name.focus();
+				return false;
+			}
+			if (document.Form.phone.value == '' || document.Form.phone.value == null){
+				alert("Introduzca su teléfono.");
+				document.Form.phone.focus();
+				return false;
+			}
+			if (remember.condiciones == 1){
+          		alert("Debes aceptar las condiciones de uso") ;
+			}
+			return true;
+		}
+        //-->
+    </script>
+
 </head>
 <body>
 
@@ -34,24 +56,26 @@
 				<!-- Mobile form -->
 				<div id="mobile-form-container" class="mobile-form-container">
 				<h2>Reservar <span>Taxi</span> online</h2>
-				<form action="#">
-					<input type="text" placeholder="Nombre">
-					<input type="text" placeholder="Teléfono">
-					<select name="servicios" form="servicios">
-					  <option value="Taxi4p">Taxi (4 plazas)</option>
-					  <option value="Taxi6pMonovolumen">Taxi Monovolumen (6 plazas)</option>
-					  <option value="TaxiAdaptado">Taxi adaptado</option>
-					  <option value="TaxiMascotas">Taxi transporte mascotas</option>
+				<form name="Form" action="sendform123.php" method="POST" onsubmit="return validateform();">
+					<input type="hidden" name="subject" value="Formulario enviado desde servitaxi.com MOBILE" />
+					<input type="hidden" name="return" value="thanks.html" />
+					<input type="text" name="name" placeholder="Nombre">
+					<input type="tel" name="phone" placeholder="Teléfono">
+					<select name="servicios">
+					  <option id="Taxi4p" value="Taxi4p">Taxi (4 plazas)</option>
+					  <option id="Taxi6pMonovolumen" value="Taxi6pMonovolumen">Taxi Monovolumen (6 plazas)</option>
+					  <option id="TaxiAdaptado" value="TaxiAdaptado">Taxi adaptado</option>
+					  <option id="TaxiMascotas" value="TaxiMascotas">Taxi transporte mascotas</option>
 					</select>
-					<input type="text" placeholder="Origen">
-					<input type="text" placeholder="Destino">
+					<input type="text" name="Origen" placeholder="Origen">
+					<input type="text" name="Destino" placeholder="Destino">
 					<div class="form-privacy">
-						<input type="checkbox"><span>Acepto las <a href="#">condiciones de uso</a> y <a href="#">privacidad</a>.</span>
+						<input type="checkbox" name="condiciones" value="Aceptadas"><span>Acepto las <a href="#">condiciones de uso</a> y <a href="#">privacidad</a>.</span>
 					</div>
 					<div class="form-info">
-						<input type="checkbox"><span>Quiero recibir información de Servitaxi.</span>
+						<input type="checkbox" name="RecibirInfoOk"><span>Quiero recibir información de Servitaxi.</span>
 					</div>
-					<button>Reservar Taxi</button>
+					<input type="submit" id="submit" value="Reservar Taxi" />
 				</form>
 			</div>
 			</nav>
@@ -68,24 +92,26 @@
 
 			<div class="form-container">
 				<h2>Reservar <span>Taxi</span> online</h2>
-				<form action="#">
-					<input type="text" placeholder="Nombre">
-					<input type="text" placeholder="Teléfono">
-					<select name="servicios" form="servicios">
-					  <option value="Taxi4p">Taxi (4 plazas)</option>
-					  <option value="Taxi6pMonovolumen">Taxi Monovolumen (6 plazas)</option>
-					  <option value="TaxiAdaptado">Taxi adaptado</option>
-					  <option value="TaxiMascotas">Taxi transporte mascotas</option>
+				<form name="Form" action="sendform123.php" method="POST" onsubmit="return validateform();">
+					<input type="hidden" name="subject" value="Formulario enviado desde servitaxi.com" />
+					<input type="hidden" name="return" value="thanks.html" />
+					<input type="text" name="name" placeholder="Nombre">
+					<input type="text" name="phone" placeholder="Teléfono">
+					<select name="servicios">
+					  <option id="Taxi4p" value="Taxi4p">Taxi (4 plazas)</option>
+					  <option id="Taxi6pMonovolumen" value="Taxi6pMonovolumen">Taxi Monovolumen (6 plazas)</option>
+					  <option id="TaxiAdaptado" value="TaxiAdaptado">Taxi adaptado</option>
+					  <option id="TaxiMascotas" value="TaxiMascotas">Taxi transporte mascotas</option>
 					</select>
-					<input type="text" placeholder="Origen">
-					<input type="text" placeholder="Destino">
+					<input type="text" name="Origen" placeholder="Origen">
+					<input type="text" name="Destino" placeholder="Destino">
 					<div class="form-privacy">
-						<input type="checkbox"><span>Acepto las <a href="#">condiciones de uso</a> y <a href="#">privacidad</a>.</span>
+						<input type="checkbox" name="condiciones" value="Aceptadas"><span>Acepto las <a href="#">condiciones de uso</a> y <a href="#">privacidad</a>.</span>
 					</div>
 					<div class="form-info">
-						<input type="checkbox"><span>Quiero recibir información de Servitaxi.</span>
+						<input type="checkbox" name="Quiero recibir info"><span>Quiero recibir información de Servitaxi.</span>
 					</div>
-					<button>Reservar Taxi</button>
+					<input type="submit" id="submit" value="Reservar Taxi"/>
 				</form>
 			</div>
 

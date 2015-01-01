@@ -245,7 +245,7 @@
 		margin-top: 15px;
 	}
 
-	button {
+	input[type="submit"] {
 		background-color: $c-primary-green;
 		border: none;
 		border-radius: 3px;
@@ -267,6 +267,15 @@
 		display: none;
 		margin-top: 8em;
 		padding: 2em 0;
+	}
+}
+
+.btn-volver {
+	clear: both;
+	float: left;
+	a {
+		text-decoration: none;
+		color: #7ec048;
 	}
 }
 
