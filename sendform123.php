@@ -58,7 +58,7 @@ else
 
 	// header ("Location:".$_SERVER["HTTP_REFERER"]."?msg=".urlencode("Invalid Data"));
 	// or use hardcoded page f.e.:
-	header("Location:".$_SERVER["HTTP_REFERER"]."error.html");
+	header("Location:".$_SERVER["HTTP_REFERER"]."/error.html");
 	die();
 }
 
