@@ -47,11 +47,13 @@
 								<h5>Reservas 24h</h5>
 							</div>
 						</a>
-						<div class="reservar-container">
-							<img id="reservar" src="dist/img/icon-reserva.png" alt="Icono Reservas">
-							<h4>Reservar Taxi</h4>
-							<h5>Online</h5>
-						</div>
+						<a id="reservar" href="">
+							<div class="reservar-container">
+								<img src="dist/img/icon-reserva.png" alt="Icono Reservas">
+								<h4>Reservar Taxi</h4>
+								<h5>Online</h5>
+							</div>
+						</a>
 					</div>
 				</div>
 				<!-- Mobile form -->
@@ -141,9 +143,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 
 	<script>
-		$("#reservar").click(function(){
+		$("#reservar").click(function(event){
+			event.preventDefault();
 		  $("#mobile-form-container").slideToggle("normal");
-		  $(this).toggleClass("active");
 		});
 	</script>
 

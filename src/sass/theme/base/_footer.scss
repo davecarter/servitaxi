@@ -30,4 +30,11 @@ footer {
 			color: lighten(#959595, 15%)
 		}
 	}
+
+	@media (min-device-width: 320px) and (max-device-width: 568px) { 
+
+		span, a {
+			font-size: 2em;
+		}
+	}
 }
