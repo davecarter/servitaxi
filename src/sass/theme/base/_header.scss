@@ -45,20 +45,27 @@
 		h4,
 		h5 {
 			float: left;
-			padding: 0 0 0 15px;
+			margin: 0 0 0 10px;
 			text-align: left;
+			width: 60%;
 		}
 	}
 
 	.telf-container {
+		border-left: 1px solid grey;
 		float: right;
 		margin-top: 0;
 		padding: 0;
 		text-align: right;
-		width: 50%;
+		width: 47%;
+		margin-right: 2%;
 
 		img {
 			padding: 0 20px 0 20px;
+		}
+
+		h4 {
+			width: 70%;
 		}
 
 		h5 {
@@ -74,11 +81,11 @@
 		width: 120px;
 	}
 
-	@media (min-width: $b-large) and (-webkit-min-device-pixel-ratio: 2) {
+	@media (min-width: $b-large) {
 		display: none;
 	}
 
-	@media (max-width: $b-large) and (-webkit-min-device-pixel-ratio: 2) {
+	@media (max-width: $b-large) {
 		display: block;
 	}
 
@@ -86,13 +93,13 @@
 
 
 .desktop-nav {
-	@media (min-width: $b-large) and (-webkit-min-device-pixel-ratio: 2) {
+	@media (min-width: $b-large) {
 		@include container();
 		display: block;
 		margin-bottom: 6em;
 	}
 
-	@media (max-width: $b-large) and (-webkit-min-device-pixel-ratio: 2) {
+	@media (max-width: $b-large) {
 		display: none;
 	}
 
@@ -101,8 +108,8 @@
 .telf-container,
 .reservar-container {
 	float: right;
-	padding: 2em 0 0 0;
-	width: span(4 at 15 of 18);
+	margin: 2em 0 0 0;
+	width: 200px;
 	
 	img {
 		float: right;
@@ -114,8 +121,7 @@
 		float: right;
 		font-weight: 300;
 		font-size: 1.2em;
-		margin: 0;
-		width: 50%;
+		margin: 0 50px 0 0;
 		span {
 			color: $c-primary-green;
 		}
@@ -123,15 +129,29 @@
 
 	h5 {
 		font-size: .8em;
-		padding-right: 16px;
 		text-align: right;
 	}
 }
 
+.telf-container {
+	background: url("../img/icon-telf.png") top right no-repeat;
+	background-size: 38px;
+	float: right;
+	height: 39px;
+	
+	&:hover {
+		background: url("../img/icon-telf.png") bottom right no-repeat;
+		background-size: 38px;
+		cursor: pointer;
+		height: 38px;
+	}
+}
+
 .header {
-	@include container(1128px);
-		@media (min-width: $b-large) and (-webkit-min-device-pixel-ratio: 2) {
-			padding: 0 span(1 of 18) 0;
+	@include container();
+	max-width: 80%;
+		@media (min-width: $b-large) {
+			padding: 0;
 			h1,
 			h3 {
 				@include span(14);
@@ -139,7 +159,8 @@
 			}
 		}
 
-		@media (max-width: $b-large) and (-webkit-min-device-pixel-ratio: 2) {
+		@media (max-width: $b-large) {
+			max-width: 100%;
 			position: relative;
 			margin-right: 0 gutter();
 			h1,
@@ -154,11 +175,11 @@
 	float: none;
 
 	hgroup {
-		@media (min-width: $b-large) and (-webkit-min-device-pixel-ratio: 2) {
+		@media (min-width: $b-large) {
 			@include span(10 of 18);
 		}
 
-		@media (max-width: $b-large) and (-webkit-min-device-pixel-ratio: 2) {
+		@media (max-width: $b-large) {
 			padding-top: 12em;
 			h1 {
 				padding-bottom: 1em;
@@ -172,14 +193,14 @@
 
 .form-container,
 .mobile-form-container {
-	@media (min-width: $b-large) and (-webkit-min-device-pixel-ratio: 2) {
+	@media (min-width: $b-large) {
 		@include span(6 at 13 of 18);
 		background-color: rgba(34,34,34,.6);
 		display: block;
 		padding: 1em 2em;
 	}
 
-	@media (max-width: $b-large) and (-webkit-min-device-pixel-ratio: 2) {
+	@media (max-width: $b-large) {
 		position: relative;
 		margin: 0 auto;
 		display: none;
@@ -237,6 +258,7 @@
 			color: #fff;
 			display: inline-block;
 			padding: 5px 0 0 0;
+			width: 80%;
 		}
 
 		a {
@@ -270,7 +292,7 @@
 
 
 .mobile-form-container { 
-	@media (max-width: $b-large) and (-webkit-min-device-pixel-ratio: 2) {
+	@media (max-width: $b-large) {
 		display: none;
 		margin-top: 8em;
 		padding: 2em 0;
@@ -285,7 +307,7 @@
 		color: #7ec048;
 	}
 
-	@media (max-width: $b-large) and (-webkit-min-device-pixel-ratio: 2) {
+	@media (max-width: $b-large) {
 		float: none;
 		text-align: center;
 		display: block;

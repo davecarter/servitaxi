@@ -8,7 +8,7 @@ $susy: (
 	gutter-position: after,
 	container: auto,
 	container-position: center,
-	columns: 18,
+	columns: 16,
 	gutters: .1,
 	column-width: false,
 	global-box-sizing: content-box,
@@ -32,10 +32,10 @@ $susy: (
 
 
 // Variables de layout
-$s-innerWidth:			1128px;					// Max width Listado detalle
+$s-innerWidth:			768px;					// Max width Listado detalle
 
 // Breakpoints
-$b-large:				1128px;
+$b-large:				768px;
 $b-medium:				320px;
 
 // Colours

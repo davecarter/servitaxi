@@ -9,7 +9,7 @@ purchase a license to remove the footer!
 ------------------------------------------------------------------------------*/
 /* SET VARIABLES */
 
-$to = "dave74@gmail.com"; //email address to receive the email
+$to = "reservas@servitaxi.com"; //email address to receive the email
 
 $thankyoupage = "gracias.html";
 
