@@ -26,7 +26,7 @@ section.servicios {
   margin: 0 auto;
   float: none;
   padding: 80px 0;
-  width: 970px;
+  max-width: 970px;
 }
 section.servicios h2 {
   font-size: 3em;
@@ -91,6 +91,43 @@ section.servicios h2 {
   color: white;
   font-size: 1.5em;
   text-align: center;
+}
+
+.bg-servicios {
+  background: url("../img/bg-servicios.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px inset;
+  height: 400px;
+}
+@media screen and (max-width: 768px) {
+  .bg-servicios {
+    height: 300px;
+  }
+}
+
+.serv-block {
+  box-sizing: border-box;
+  float: left;
+  padding: 80px;
+  text-align: center;
+  width: 33.26%;
+}
+
+.serv-particulares {
+  margin-right: 1px;
+  background-color: #040702;
+}
+
+.serv-empresas {
+  margin-right: 1px;
+  background-color: black;
+}
+
+.serv-conductores {
+  background-color: black;
+  float: right;
+  margin-right: 0;
 }
 
 .clearfix:before, .fold:before, .mobile-nav .secondary-mobile-nav:before, footer:before,
