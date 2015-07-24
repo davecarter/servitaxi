@@ -10,3 +10,83 @@ section {
   margin: 0;
   @include full;
 }
+
+article {
+  float: left;
+  width: 100%;
+}
+
+// Servicios ---------------------------------------------
+
+#servicios {
+  background-color: darken($c-primary-green, 20%);
+}
+
+section.servicios {
+  @include layout(15);
+  margin: 0 auto;
+  float: none;
+  padding: 80px 0;
+  width: $s-contentWidth;
+
+  h2 {
+    font-size: 3em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  @media screen and (max-width: 768px) { 
+    padding: 40px 0;
+    width: 100%;
+
+    h2 {
+      font-size: 2.2em;
+    }
+  }
+}
+
+.serv-item {
+  @include span(5 of 15);
+  box-sizing: border-box;
+  color: $c-ultralight-green;
+  font-size: 1.2em;
+  padding: 1.5em;
+  text-align: center;
+
+  @media screen and (max-width: 768px) { 
+    @include span(15 of 15);
+    padding: 1em 3em;
+
+    img {
+      width: 80px;
+    }
+  }
+
+  .marker {
+    color: white;
+    font-weight: bold;
+  }
+  
+  &--fast {
+    @include omega;
+  }
+}
+
+.serv-footer {
+  box-sizing: border-box;
+  margin: 0 auto 50px;
+  float: left;
+  padding: 0 10em;
+
+  @media screen and (max-width: 768px) { 
+    padding: 0 5em;
+  }
+
+  p {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+  }
+}

@@ -33,13 +33,15 @@ $susy: (
 
 // Variables de layout
 $s-innerWidth:			769px;					// Max width Listado detalle
+$s-contentWidth:		970px;					// Max width containers
 
 // Breakpoints
 $b-large:				769px;
 $b-medium:				320px;
 
 // Colours
-$c-primary-green:		#7ec048;				// Main color
+$c-primary-green:			#7ec048;				// Main color
+$c-ultralight-green:	#DDF4CA;				// Typo
 
 $c-neutroLightest:  	#ffffff;
 $c-neutroDarkest:   	#000000;
