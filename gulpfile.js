@@ -1,6 +1,6 @@
 /*!
  * gulp
- * $ npm install gulp-ruby-sass gulp-autoprefixer gulp-minify-css gulp-jshint gulp-concat gulp-uglify gulp-imagemin gulp-notify gulp-rename gulp-livereload gulp-cache del --save-dev
+ * $ npm install gulp-ruby-sass gulp-autoprefixer gulp-minify-css gulp-concat gulp-uglify gulp-imagemin gulp-notify gulp-rename gulp-livereload gulp-cache del --save-dev
  */
 
 // Load plugins
@@ -8,7 +8,6 @@ var gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
-    jshint = require('gulp-jshint'),
     uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
     rename = require('gulp-rename'),
@@ -31,8 +30,6 @@ gulp.task('styles', function() {
 // Scripts
 gulp.task('scripts', function() {
   return gulp.src('src/js/**/*.js')
-    .pipe(jshint('.jshintrc'))
-    .pipe(jshint.reporter('default'))
     .pipe(concat('main.js'))
     .pipe(gulp.dest('dist/js'))
     .pipe(rename({ suffix: '.min' }))
