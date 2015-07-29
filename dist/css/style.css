@@ -52,8 +52,13 @@ section.servicios h2 {
   box-sizing: border-box;
   color: #DDF4CA;
   font-size: 1.2em;
+  font-weight: 100;
   padding: 1.5em;
   text-align: center;
+}
+.serv-item img {
+  padding-bottom: 2em;
+  width: 80px;
 }
 @media screen and (max-width: 768px) {
   .serv-item {
@@ -64,7 +69,7 @@ section.servicios h2 {
     padding: 1em 3em;
   }
   .serv-item img {
-    width: 80px;
+    width: 60px;
   }
 }
 .serv-item .marker {
@@ -77,10 +82,11 @@ section.servicios h2 {
 }
 
 .serv-footer {
+  background-color: #2A4118;
   box-sizing: border-box;
-  margin: 0 auto 50px;
+  margin: 0 auto 0;
   float: left;
-  padding: 0 10em;
+  padding: 2em 15em;
 }
 @media screen and (max-width: 768px) {
   .serv-footer {
@@ -109,25 +115,46 @@ section.servicios h2 {
 .serv-block {
   box-sizing: border-box;
   float: left;
-  padding: 80px;
+  padding: 80px 60px;
   text-align: center;
   width: 33.26%;
+}
+.serv-block h2, .serv-block h3 {
+  color: #121212;
 }
 
 .serv-particulares {
   margin-right: 1px;
-  background-color: #040702;
+  background-color: #EAF6C8;
+}
+@media screen and (max-width: 940px) {
+  .serv-particulares {
+    margin-bottom: 1px;
+    width: 100%;
+  }
 }
 
 .serv-empresas {
   margin-right: 1px;
-  background-color: black;
+  background-color: #EAF6C8;
+}
+@media screen and (max-width: 940px) {
+  .serv-empresas {
+    margin-bottom: 1px;
+    width: 100%;
+  }
 }
 
 .serv-conductores {
-  background-color: black;
+  background-color: #EAF6C8;
   float: right;
   margin-right: 0;
+}
+@media screen and (max-width: 940px) {
+  .serv-conductores {
+    margin-bottom: 1px;
+    width: 100%;
+  }
 }
 
 .clearfix:before, .fold:before, .mobile-nav .secondary-mobile-nav:before, footer:before,
